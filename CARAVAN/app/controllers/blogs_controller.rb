@@ -1,28 +1,18 @@
 class BlogsController < ApplicationController
   def index
-<<<<<<< HEAD
-
->>>>>>> master
+    @blogs = Blog.all
   end
 
   def show
   end
 
   def new
-
-<<<<<<< HEAD
- 
-=======
->>>>>>> master
+    @blog = Blog.new
   end
 
   def create
- 
-<<<<<<< HEAD
-
-=======
-
->>>>>>> master
+    @blod = Blog.new(blogs_params)
+    @blog.save
   	redirect_to blogs_path
   end
 
